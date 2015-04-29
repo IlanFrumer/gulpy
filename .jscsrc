@@ -1,0 +1,35 @@
+{
+  "maximumLineLength": {
+    "value": 130,
+    "allowComments": true
+  },
+  "validateIndentation": 2,
+  "validateLineBreaks": "LF",
+  "fileExtensions": [".js"],
+  "requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
+  "requireSpaceAfterKeywords": ["if", "for", "while", "switch", "catch", "do", "else", "return", "try" ],
+  "disallowKeywords": ["with"],
+  "requireSpacesInFunctionExpression": {
+      "beforeOpeningCurlyBrace": true
+  },
+  "disallowSpacesInFunctionExpression": {
+      "beforeOpeningRoundBrace": true
+  },
+  "disallowKeywordsOnNewLine": ["else", "catch"],
+  "validateQuoteMarks": { "mark": "'", "escape": true },
+  "disallowMultipleLineBreaks": true,
+  "requireSpaceBeforeBlockStatements": true,
+  "requireParenthesesAroundIIFE": true,
+  "disallowMultipleLineStrings": true,
+  "requireLineFeedAtFileEnd": true,
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowMultipleVarDecl": true,
+  "disallowEmptyBlocks": true,
+  "requireDotNotation": true,
+  "requireCapitalizedConstructors": true,
+  "disallowMixedSpacesAndTabs": true,
+  "disallowTrailingWhitespace": true,
+  "disallowTrailingComma": true,
+  "requireOperatorBeforeLineBreak": true,
+  "disallowYodaConditions": true
+}

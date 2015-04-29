@@ -4,7 +4,7 @@ var Injector = require('./lib/injector');
 
 module.exports = function(gulp) {
 
-  gulpy = {};
+  var gulpy = {};
 
   var injector = new Injector();
 
@@ -38,6 +38,12 @@ module.exports = function(gulp) {
     });
   };
 
+  gulpy.provide = function(alias, value) {
+    injector.provide(alias, function() {
+      return value;
+    });
+  };
+
   var _task = gulp.task;
   /**
    *  Wraps the original gulp.task to allow dependency injection
@@ -51,7 +57,6 @@ module.exports = function(gulp) {
     fn = fn || function() {};
 
     // TODO: add promise support
-
 
     var wrap = function(cb) {
       return injector.invoke(fn, this, {
